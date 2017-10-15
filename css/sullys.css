@@ -1,0 +1,202 @@
+/* Page Level */
+
+body > .container-fluid {
+	padding: 0px;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Element Level */
+nav.navbar {
+	background-color: #3aa9ae;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+/* Main Section */
+#main-home {
+	position: relative;
+	width: 100%;
+	min-height: 465px;
+	overflow: hidden;
+}
+
+#main-video-bg {
+	opacity: .8;
+	z-index: -11;
+}
+
+#main-home .bg-overlay {
+	background: rgba(0, 0, 0, .5);
+	z-index: -10;
+	width: 100%;
+	height: 100%;
+}
+
+#main-logo-container {
+	width: 100%;
+	left: -50%;
+}
+
+#main-logo-container.show {
+	-webkit-transition: all ease-in-out 1s .5s;
+    -moz-transition: all ease-in-out 1s .5s;
+    -o-transition: all ease-in-out 1s .5s;
+    transition: all ease-in-out 1s .5s;
+	left: 50%;
+}
+
+#main-logo {
+	display: block;
+	z-index: -1;
+	max-width: 100%;
+	max-height: calc(100% - 100px);
+	margin: 0 auto;
+}
+
+#main-headline {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	text-shadow: -3px 3px #3aa9ae;
+	color: #fff;
+	opacity: 0;
+	text-align: center;
+}
+
+#main-headline.show {
+	-webkit-transition: all 2s 1.5s;
+    -moz-transition: all 2s 1.5s;
+    -o-transition: all 2s 1.5s;
+    transition: all 2s 1.5s;
+	opacity: 1;
+}
+
+#scroll-arrow {
+	position: absolute;
+	left: 50%;
+	bottom: 15px;
+	color: white;
+	opacity: 0;
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+#scroll-arrow.flash {
+	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+	opacity: 1;
+}
+
+/* Speacials Section */
+
+#section2 {
+	position: relative;
+	overflow: hidden;
+	/*padding: 0 50px 30px;*/
+}
+
+.chalkboard-bg {
+	position: absolute;
+	z-index: -10;
+}
+
+.bg-accent {
+	position: absolute;
+	z-index: -9;
+}
+
+#section2 .sandwich {
+	width: 500px;
+	left: 0px;
+	top: 80px;
+	transform: translateX(-40%);
+}
+
+#section2 .salad {
+	width: 500px;
+	bottom: 50px;
+	right: 0px;
+	transform: translateX(40%);
+}
+
+#section2 h2 {
+	margin-top: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	color: white;
+}
+
+.special-card {
+	display: inline-block;
+	float: left;
+	margin-top: 30px;
+
+}
+
+.card-body {
+	position: relative;
+	background-color: rgba(255, 255, 255, 1);
+	height: 100%;
+	border-radius: 15px;
+}
+
+.price {
+	display: inline-block;
+	float: right;
+}
+
+.card-text {
+	padding: 15px;
+}
+
+.card-text > p {
+	margin: 0px;
+}
+
+.card-footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+											    Card Flip Animation 
+ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+													  Media Queries 
+ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+	
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+	
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+	
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) {
+	
+}
